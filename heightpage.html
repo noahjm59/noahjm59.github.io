@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: black;
+        }
+        img {
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        .card {
+            background-color: silver;
+            box-shadow: 0 4px 8px 0 rgb(167, 167, 167);
+            transition: .3s;
+        }
+        .container {
+            padding: 8%;
+        }
+        div {
+            height: 70%;
+        }
+        h4 {
+            display: inline;
+            margin: auto;
+        }
+    </style>
+    <img src="/Users/noahmartin/Desktop/website/output-onlinepngtools.png" alt="TikTokHeight">
+        
+        <h1>You have watched over</h1>
+        <h1 id="height_identifier"></h1><h1>feet of TikToks</h1>
+    
+    <div class="card">
+        <div class="container">
+            <h4><b>Your TikTok tower is </b></h4><h4 id="libertyidentifier"></h4><h4>x as tall as the Statue of Liberty</h4>
+        </div>
+        <img src="/Users/noahmartin/Desktop/website/statueliberty.svg" alt="Statue of Liberty" style="width:80%">
+    </div>
+
+    <script>
+        var new_height = localStorage.getItem("height_in_feet")
+        document.getElementById("height_identifier").innerHTML = Math.floor(new_height);
+
+        var libertyheightcomp = new_height/305;
+        document.getElementById("libertyidentifier").innerHTML = libertyheightcomp;
+    </script>
+
+    
+</html>
