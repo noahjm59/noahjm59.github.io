@@ -57,6 +57,27 @@
         <img src="/Users/noahmartin/Desktop/website/statueliberty.svg" alt="Statue of Liberty">
     </div>
 
+    <div class="card">
+        <div class="container">
+            <h4>Your TikTok tower is about </h4><h4 id="bridgeidentifier"></h4><h4>x as tall as the Golden Gate Bridge</h4>
+        </div>
+        <img src="/Users/noahmartin/Desktop/website/goldengate.png" alt="Golden Gate Bridge">
+    </div>
+
+    <div class="card">
+        <div class="container">
+            <h4>Your TikTok tower is about </h4><h4 id="eiffelidentifier"></h4><h4>x as tall as the Eiffel Tower</h4>
+        </div>
+        <img src="/Users/noahmartin/Desktop/website/eiffel.svg" alt="Eiffel Tower">
+    </div>
+
+    <div class="card">
+        <div class="container">
+            <h4>Your TikTok tower is about </h4><h4 id="empireidentifier"></h4><h4>x as tall as the Empire State Building</h4>
+        </div>
+        <img src="/Users/noahmartin/Desktop/website/empire.png" alt="Empire State Building">
+    </div>
+
     <script>
         var new_height = localStorage.getItem("height_in_feet")
         document.getElementById("height_identifier").innerHTML = Math.floor(new_height);
@@ -66,6 +87,15 @@
 
         var abeheightcomp = new_height/60;
         document.getElementById("abeidentifier").innerHTML = Math.round(abeheightcomp * 10) / 10;
+
+        var goldengatecomp = new_height/746;
+        document.getElementById("bridgeidentifier").innerHTML = Math.round(goldengatecomp * 10) / 10;
+
+        var eiffelcomp = new_height/1063;
+        document.getElementById("eiffelidentifier").innerHTML = Math.round(eiffelcomp * 10) / 10;
+
+        var empirecomp = new_height/1454;
+        document.getElementById("empireidentifier").innerHTML = Math.round(empirecomp * 10) / 10;
 
     </script>
 
